@@ -840,7 +840,7 @@ li {
   background: linear-gradient(140.19deg, rgba(227, 227, 227, 0.7) 25.07%, rgba(238, 238, 238, 0) 66.06%), #F5F5F5;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.11), inset 0px 2px 4px #FFFFFF;
   padding: 40px;
-  min-width: 610px;
+  width: 610px;
 }
 
 .reviews .swiper-slide img {
