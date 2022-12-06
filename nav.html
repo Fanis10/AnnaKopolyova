@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Навигация</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+<body>
+
+    <section class="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="index.html">Главная</a>
+                <a href="course.html">Курс</a>
+                <button class="btn-gray" data-bs-toggle="modal" data-bs-target="#exampleModal">Модальное окно</button>
+            </div>
+        </div>
+    </section>
+
+    
+
+<div class="fade modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal__close-btn" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.17 13.83L13.83 8.17M13.83 13.83L8.17 8.17M11 21C16.5 21 21 16.5 21 11C21 5.5 16.5 1 11 1C5.5 1 1 5.5 1 11C1 16.5 5.5 21 11 21Z" stroke="#444444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__text">
+                    Для приобретения курса заполните, пожалуйста, данные ниже. После этого Вы перейдете на страницу оплаты.
+                </div>
+                <form class="form modal__form">
+                    <fieldset class="form-group modal__form-group">
+                        <input placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="form-group modal__form-group">
+                        <input placeholder="Фамилия">
+                    </fieldset>
+                    <fieldset class="form-group modal__form-group">
+                        <input type="email" placeholder="E-mail">
+                    </fieldset>
+                    <fieldset class="form-group modal__form-group">
+                        <input type="tel" placeholder="+7 916 999 99 99">
+                    </fieldset>
+                    <div class="check modal__check">
+                        <input type="checkbox">
+                        <label for="">
+                            Нажимая на кнопку <span>ПРОДОЛЖИТЬ</span> я даю свое согласие на обработку персональных данных и подтверждаю, что ознакомлен(-а) с <a href="">Политикой конфиденциальности </a> и <a href="">Предложением оферты.</a>
+                        </label>
+                    </div>
+                    <div class="modal-body__info">«Курс можно оплатить сразу или  в рассрочку под 0%»</div>
+                        <button class="btn-gray form__btn modal__form-btn">продолжить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
